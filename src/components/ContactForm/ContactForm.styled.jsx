@@ -39,7 +39,8 @@ export const Button = styled.button`
   background: ${p => p.theme.colors.white};
   transition: 0.3s;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:focus {
     background: ${p => p.theme.colors.green};
   }
 `;
