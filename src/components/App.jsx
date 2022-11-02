@@ -70,7 +70,7 @@ export class App extends Component {
         <Subtitle>Contacts</Subtitle>
         <Filter value={this.state.filter} onChange={this.filterInput} />
         <ContactList
-          array={this.visibleContacts()}
+          contacts={this.visibleContacts()}
           onClick={this.deleteContact}
         />
       </Box>

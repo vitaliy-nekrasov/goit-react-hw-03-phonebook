@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { List, Item, Text, Button } from './ContactList.styled';
 
-export function ContactList({ array, onClick }) {
+export function ContactList({ contacts, onClick }) {
   return (
     <List>
-      {array.map(contact => {
+      {contacts.map(contact => {
         return (
           <Item key={contact.id}>
             <Text>
@@ -21,5 +21,6 @@ export function ContactList({ array, onClick }) {
 }
 
 ContactList.propTypes = {
-  array: PropTypes.array,
+  contacts: PropTypes.array.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
